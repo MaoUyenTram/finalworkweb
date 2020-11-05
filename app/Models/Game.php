@@ -4,9 +4,10 @@
 namespace App\Models;
 
 
-class Friend
+class Game
 {
     protected $fillable = [
         'name',
+        'settingText',
     ];
 }

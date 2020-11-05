@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FriendController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,10 +18,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])->group(function (){
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+    Route::resource('/friends-and-bans', FriendController::class)->name('index','friends-and-bans');
+});
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/friends-and-bans', function () {
-    return view('friends-and-bans');
-})->name('friends-and-bans');
+//Route::resource('/friends-and-bans', FriendController::class)->name('index','friends-and-bans');
+//Route::resource(‘bans’, BanController::class);

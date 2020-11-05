@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b5b65e2-9f9d-4972-9c55-e54a6b51a2e1" name="Default Changelist" comment="" />
+    <list default="true" id="8b5b65e2-9f9d-4972-9c55-e54a6b51a2e1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Ban.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Friend.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +20,23 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -134,6 +159,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1jagbyHBawVutbdhV0qCRRnBuMI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -141,6 +169,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -174,6 +203,9 @@
       <updated>1604047692354</updated>
       <workItem from="1604047695825" duration="609000" />
       <workItem from="1604099175767" duration="4870000" />
+      <workItem from="1604367549697" duration="5795000" />
+      <workItem from="1604458811041" duration="8724000" />
+      <workItem from="1604567849196" duration="1906000" />
     </task>
     <servers />
   </component>
@@ -181,17 +213,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="758" y="335" key="NewPhpClassDialog" timestamp="1604100354959">
+    <state x="631" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604460491151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="758" y="335" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604100354959" />
-    <state x="795" y="444" key="NewPhpFileDialog" timestamp="1604101533185">
+    <state x="631" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604460491151" />
+    <state x="758" y="335" key="NewPhpClassDialog" timestamp="1604568659820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="795" y="444" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604101533185" />
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1604099230076">
+    <state x="758" y="335" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604568659820" />
+    <state x="795" y="444" key="NewPhpFileDialog" timestamp="1604568637091">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604099230076" />
+    <state x="795" y="444" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604568637091" />
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1604567893174">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604567893174" />
+    <state x="592" y="217" width="736" height="606" key="find.popup" timestamp="1604468178732">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="592" y="217" width="736" height="606" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604468178732" />
   </component>
 </project>
