@@ -17,6 +17,7 @@ class CreateGamesTable extends Migration
             $table->id();
             $table->unsignedBigInteger('UserId');
             $table->foreign('UserId')->references('id')->on('users') ;
+            $table->string('name');
             $table->text('settingText');
             $table->timestamps();
         });

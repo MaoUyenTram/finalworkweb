@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b5b65e2-9f9d-4972-9c55-e54a6b51a2e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Ban.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Friend.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/PasswordValidationRules.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/PasswordValidationRules.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FriendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FriendController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Friend.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Friend.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Game.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Game.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Pile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Pile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_03_013844_create_friends_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_03_013844_create_friends_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_03_014646_create_bans_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_05_091945_create_games_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_05_091945_create_games_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/friends/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/friends/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -205,7 +212,12 @@
       <workItem from="1604099175767" duration="4870000" />
       <workItem from="1604367549697" duration="5795000" />
       <workItem from="1604458811041" duration="8724000" />
-      <workItem from="1604567849196" duration="1906000" />
+      <workItem from="1604567849196" duration="7551000" />
+      <workItem from="1604678397930" duration="3810000" />
+      <workItem from="1605104782460" duration="6016000" />
+      <workItem from="1605202095253" duration="1470000" />
+      <workItem from="1605263618533" duration="12134000" />
+      <workItem from="1605342915078" duration="9786000" />
     </task>
     <servers />
   </component>
@@ -213,25 +225,33 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="631" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604460491151">
+    <state x="631" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604570012817">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="631" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604460491151" />
-    <state x="758" y="335" key="NewPhpClassDialog" timestamp="1604568659820">
+    <state x="631" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604570012817" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605353882559">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="758" y="335" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604568659820" />
-    <state x="795" y="444" key="NewPhpFileDialog" timestamp="1604568637091">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605353882559" />
+    <state x="758" y="335" key="NewPhpClassDialog" timestamp="1605110414880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="795" y="444" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604568637091" />
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1604567893174">
+    <state x="758" y="335" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605110414880" />
+    <state x="795" y="444" key="NewPhpFileDialog" timestamp="1604689202445">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604567893174" />
+    <state x="795" y="444" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604689202445" />
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1605342922098">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605342922098" />
     <state x="592" y="217" width="736" height="606" key="find.popup" timestamp="1604468178732">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="592" y="217" width="736" height="606" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604468178732" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1605287119712">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605287119712" />
   </component>
 </project>

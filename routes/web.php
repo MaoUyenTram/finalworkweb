@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GameController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FriendController;
 
@@ -23,6 +24,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function (){
         return view('dashboard');
     })->name('dashboard');
     Route::resource('/friends-and-bans', FriendController::class)->name('index','friends-and-bans');
+    Route::resource('/games', GameController::class)->name('index','games');
 });
 
 //Route::resource('/friends-and-bans', FriendController::class)->name('index','friends-and-bans');

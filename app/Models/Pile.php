@@ -4,7 +4,9 @@
 namespace App\Models;
 
 
-class Pile
+use Illuminate\Database\Eloquent\Model;
+
+class Pile extends Model
 {
 
     protected $fillable = [
