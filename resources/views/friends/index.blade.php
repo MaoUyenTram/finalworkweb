@@ -48,7 +48,7 @@
                                         <input type="hidden" name="state" value=0>
                                         @method('PUT')
                                         @csrf
-                                        <button class="flex-shrink-0 bg-blue-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="submit">move</button>
+                                        <button class="flex-shrink-0 bg-blue-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="submit">move to banlist</button>
                                     </form>
                                 </td>
                                 <td>
@@ -92,7 +92,7 @@
                                         <input type="hidden" name="state" value=1>
                                         @method('PUT')
                                         @csrf
-                                        <button class="flex-shrink-0 bg-blue-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="submit">move</button>
+                                        <button class="flex-shrink-0 bg-blue-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="submit">move to friendlist</button>
                                     </form>
                                 </td>
                                 <td>

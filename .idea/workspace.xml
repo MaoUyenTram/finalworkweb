@@ -3,19 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8b5b65e2-9f9d-4972-9c55-e54a6b51a2e1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/PasswordValidationRules.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/PasswordValidationRules.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FriendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FriendController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Friend.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Friend.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Game.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Game.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Item.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Pile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Pile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_03_013844_create_friends_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_03_013844_create_friends_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_03_014646_create_bans_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_05_091945_create_games_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_05_091945_create_games_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/friends/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/friends/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,6 +206,7 @@
       <workItem from="1605202095253" duration="1470000" />
       <workItem from="1605263618533" duration="12134000" />
       <workItem from="1605342915078" duration="9786000" />
+      <workItem from="1606835648503" duration="1200000" />
     </task>
     <servers />
   </component>
@@ -241,10 +230,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="795" y="444" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604689202445" />
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1605342922098">
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1606835648903">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605342922098" />
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606835648903" />
     <state x="592" y="217" width="736" height="606" key="find.popup" timestamp="1604468178732">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
