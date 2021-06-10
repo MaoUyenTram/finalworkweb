@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePilesTable extends Migration
+class CreateGamesessionTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,12 @@ class CreatePilesTable extends Migration
      */
     public function up()
     {
-        Schema::create('piles', function (Blueprint $table) {
+        Schema::create('gamesession', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('GameId');
-            $table->foreign('GameId')->references('id')->on('games') ->onDelete('cascade');
-            $table->string('name');
-            $table->boolean('private');
-            $table->tinyInteger('visibility');
-            $table->string('image')->nullable();
-            $table->string('owner')->nullable();
+            $table->foreign('GameId')->references('id')->on('games')->onDelete('cascade');
+            $table->unsignedBigInteger('UserId');
+            $table->foreign('UserId')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -33,6 +30,6 @@ class CreatePilesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('piles');
+        Schema::dropIfExists('gamesession');
     }
 }

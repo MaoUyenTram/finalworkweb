@@ -34,7 +34,16 @@ class FriendController extends Controller
         $request->validate([
             'name' => 'required|regex:/#/',
         ]);
+
+
+
+        if (strpos($request->input('name'),' ')){
+            redirect()->back()->with('error', 'no such person');
+        }
         $name = explode("#", $request->input('name'));
+        if (!is_numeric($name[1])){
+            redirect()->back()->with('error', 'no such person');
+        }
 
         if (DB::table('users')->where('name', $name[0])->where('id',$name[1])->exists()) {
             if (DB::table('friends')->where('name',$request->input('name'))->where('UserId',Auth::id())->doesntExist()) {
@@ -71,9 +80,7 @@ class FriendController extends Controller
     public function update(Request $request)
     {
         $friend = Friend::where('name',$request->input('name'))->where('UserId',Auth::id())->first();
-
         $friend->state = $request->input('state');
-
         $friend->save();
 
         return redirect()->route('friends-and-bans')->with('succes', 'successfully moved');

@@ -20,25 +20,39 @@ class GameController extends Controller
         return view('games.index')->with('games',$games);
     }
 
+
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function create()
     {
-        //
+        return view('games.upload');
     }
 
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+        ]);
+
+        DB::table('games')->insert([
+            'UserId' => Auth::id(),
+            'name' => $request->input('name'),
+            'settingText' => null,
+            ]);
+
+        $idselect = DB::table('games')->where('UserId',Auth::id())->orderBy('id','desc')->first();
+        $id = $idselect->id;
+
+        return view('piles.index')->with('id',$id);
     }
 
     /**
@@ -83,6 +97,7 @@ class GameController extends Controller
      */
     public function destroy(int $gameId)
     {
-        //
+        DB::table('games')->where('id',$gameId)->delete();
+        return redirect()->back()->with('succes', 'removed succesfully');
     }
 }

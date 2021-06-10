@@ -18,6 +18,7 @@ class CreatePilesItemsTable extends Migration
             $table->foreign('PileId')->references('id')->on('piles')->onDelete('cascade');
             $table->unsignedBigInteger('ItemId');
             $table->foreign('ItemId')->references('id')->on('items')->onDelete('cascade');
+            $table->integer('amount');
         });
     }
 

@@ -13,6 +13,7 @@ class Pile extends Model
         'name',
         'private',
         'visibility',
+        'image',
     ];
 
     public function items()
