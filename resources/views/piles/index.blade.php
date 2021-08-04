@@ -56,6 +56,17 @@
                                         </select>
                                     </label>
                                 </div>
+                                <div class="mt-2">
+                                    <span class="text-gray-700">type</span><br>
+                                    <label class="inline-flex items-center">
+                                        <input type="radio" class="form-radio" name="decktype" value="stack">
+                                        <span class="ml-2">stack</span>
+                                    </label>
+                                    <label class="inline-flex items-center ml-6">
+                                        <input type="radio" class="form-radio" name="decktype" value="deck">
+                                        <span class="ml-2">card deck</span>
+                                    </label>
+                                </div>
                                 <button class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500
                                 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="submit">
                                     Add pile
@@ -71,7 +82,7 @@
                             <button
                                 class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded"
                                 type="submit">
-                                set owners and dice/roulettes
+                                upload board and set owners and dice/roulettes
                             </button>
                         </form>
                         <br>
@@ -149,7 +160,8 @@
                                     <form class="px-6 py-4" name="add" method="post" action="{{route('items.store')}}">
                                         @method('POST')
                                         @csrf
-                                        <input type="hidden" name="cId" class="changeable" value="@if(Session::has('cVal')){{Session::get('cVal')}}@else 999 @endif">
+                                        <input type="hidden" name="cId" class="changeable"
+                                               value="@if(Session::has('cVal')){{Session::get('cVal')}}@else 999 @endif">
                                         <input type="hidden" name="id" value="{{$id}}"/>
                                         <input type="hidden" name="originalname" value="{{$img}}"/>
                                         <label class="inline-flex items-center">name:
@@ -171,24 +183,14 @@
                                     <form class="px-6 py-4" method="post" action="{{route('piles.update',$id)}}">
                                         @method('PUT')
                                         @csrf
-                                        <input type="hidden" name="cId" class="changeable" value="@if(Session::has('cVal')){{Session::get('cVal')}}@else 999 @endif">
+                                        <input type="hidden" name="cId" class="changeable"
+                                               value="@if(Session::has('cVal')){{Session::get('cVal')}}@else 999 @endif">
                                         <input type="hidden" name="id" value="{{$id}}"/>
                                         <input type="hidden" name="name" value="{{$img}}"/>
                                         <button
                                             class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded pileimg"
                                             type="submit">
                                             set this image as image for current pile
-                                        </button>
-                                    </form>
-                                    <form class="px-6 py-4" method="post" action="{{route('uploadboard')}}">
-                                        @method('POST')
-                                        @csrf
-                                        <input type="hidden" name="id" value="{{$id}}"/>
-                                        <input type="hidden" name="name" value="{{$img}}"/>
-                                        <button
-                                            class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded boardimg"
-                                            type="submit">
-                                            set this image as image for the board
                                         </button>
                                     </form>
                                 </div>

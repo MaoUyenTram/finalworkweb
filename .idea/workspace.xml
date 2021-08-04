@@ -2,28 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b5b65e2-9f9d-4972-9c55-e54a6b51a2e1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/finalworkweb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/finalworkweb.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FriendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FriendController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GameController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GameController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Ban.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Pile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Pile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_05_091945_create_games_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_05_091945_create_games_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GameSessionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GameSessionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PileController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_05_092340_create_piles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_05_092340_create_piles_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_05_093136_create_piles_items_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_05_093136_create_piles_items_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/friends/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/friends/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/games/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/games/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/ingame.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ingame.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/6d3dec33-7720-4aa8-8087-8b67691987c8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/piles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/piles/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/piles/settings.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/piles/settings.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/session/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/session/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -207,7 +198,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -216,6 +206,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jsx.switch.disabled" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -250,6 +243,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -320,18 +314,47 @@
       <workItem from="1623186495854" duration="26117000" />
       <workItem from="1623255403975" duration="7946000" />
       <workItem from="1623284436867" duration="10439000" />
-      <workItem from="1623345067467" duration="4742000" />
+      <workItem from="1623345067467" duration="5324000" />
+      <workItem from="1623911543397" duration="2056000" />
+      <workItem from="1624030018178" duration="6104000" />
+      <workItem from="1624327793355" duration="3169000" />
+      <workItem from="1625128305403" duration="3351000" />
+      <workItem from="1626014373479" duration="608000" />
+      <workItem from="1626275832970" duration="5416000" />
+      <workItem from="1626344585768" duration="9320000" />
+      <workItem from="1626473081820" duration="12214000" />
+      <workItem from="1626608781792" duration="2571000" />
+      <workItem from="1626614671256" duration="7470000" />
+      <workItem from="1627220306570" duration="720000" />
+      <workItem from="1627226022364" duration="5284000" />
+      <workItem from="1627263359411" duration="2997000" />
+      <workItem from="1627497531428" duration="2741000" />
+      <workItem from="1627523698913" duration="3508000" />
+      <workItem from="1627582892556" duration="1240000" />
+      <workItem from="1627747570153" duration="14024000" />
+      <workItem from="1627840095078" duration="4391000" />
+      <workItem from="1627900986348" duration="8332000" />
+      <workItem from="1627985374721" duration="3466000" />
+      <workItem from="1628009102132" duration="5886000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="735" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619321641993">
+    <state x="540" y="175" key="#CLI_Interpreters" timestamp="1626401969539">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="735" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1619321641993" />
+    <state x="540" y="175" key="#CLI_Interpreters/0.0.1920.1040@0.0.1920.1040" timestamp="1626401969539" />
+    <state x="735" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1626388483639">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="735" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1626388483639" />
+    <state x="640" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1627222981410">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1627222981410" />
     <state x="714" y="4" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1622691723201">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -344,10 +367,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="736" y="434" key="ComposerInitDialogKey/0.0.1920.1040@0.0.1920.1040" timestamp="1623329089197" />
-    <state x="740" y="263" key="FileChooserDialogImpl" timestamp="1622733224062">
+    <state x="740" y="263" key="FileChooserDialogImpl" timestamp="1626401968057">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="263" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1622733224062" />
+    <state x="740" y="263" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1626401968057" />
     <state x="760" y="335" key="NewPhpClassDialog" timestamp="1622295538433">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -356,14 +379,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1622058809509" />
-    <state width="583" height="446" key="SwitcherDM" timestamp="1618125590124">
+    <state x="461" y="163" key="SettingsEditor" timestamp="1626401970015">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="583" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1618125590124" />
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1623345287978">
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1626401970015" />
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1627222971996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1623345287978" />
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1627222971996" />
     <state x="701" y="154" key="refactoring.ChangeSignatureDialog" timestamp="1623171560905">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

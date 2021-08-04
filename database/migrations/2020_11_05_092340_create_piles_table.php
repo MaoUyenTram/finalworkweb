@@ -18,8 +18,9 @@ class CreatePilesTable extends Migration
             $table->unsignedBigInteger('GameId');
             $table->foreign('GameId')->references('id')->on('games') ->onDelete('cascade');
             $table->string('name');
-            $table->boolean('private');
+            $table->boolean('private')->nullable();
             $table->tinyInteger('visibility');
+            $table->string('type')->default('stack');
             $table->string('image')->nullable();
             $table->string('owner')->nullable();
             $table->timestamps();

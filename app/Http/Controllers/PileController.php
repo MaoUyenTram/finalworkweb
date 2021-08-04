@@ -30,17 +30,18 @@ class PileController extends Controller
     }
 
     public function uploadboard(Request $request){
-
         $uuid = (String)Str::uuid();
-        $this->upload($uuid, $request->get('name'));
+        $name = $request->file('image')->getClientOriginalName();
+        $request->file('image')->move('uploads/', $name);
+        $this->upload($uuid, $name);
         DB::table('items')->insert([
-                'name' => $request->input('name'),
+                'name' => $name,
                 'topsidelocation' => $uuid,
             ]
         );
         DB::table('games')->where('id',$request->get('id'))->update(['board'=>$uuid]);
 
-        return view('piles.index',$this->getData($request));
+        return view('piles.settings',$this->getSData($request));
     }
 
     public function setndice(Request $request){
@@ -120,6 +121,7 @@ class PileController extends Controller
             'GameId' => $request->get('id'),
             'name' => $request->input('name'),
             'private' => $request->get('type'),
+            'type' => $request->get('decktype'),
             'visibility' => $request->get('vis'),
         ]);
 

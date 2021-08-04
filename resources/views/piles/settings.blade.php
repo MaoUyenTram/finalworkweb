@@ -14,6 +14,23 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="px-1 py-1 flex bg-white overflow-hidden h-full">
+                <form class=" w-full max-w-lg " method="POST" enctype="multipart/form-data"
+                      action="{{route('uploadboard')}}">
+                    @csrf
+                    <div class="flex py-2" >
+                        <input type="hidden" name="id" value= {{$id}}>
+                        <input
+                            class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                            name="image" type="file" aria-label="image" required>
+                        <button
+                            class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded"
+                            type="submit">
+                            upload board
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="px-1 py-1 flex bg-white overflow-hidden h-full">
                 <form class="flex w-full" method="post" action="{{route('setndice')}}">
                     @method("POST")
                     @csrf
@@ -88,10 +105,10 @@
                     </button>
                 </div>
                 <br>
-                <table class="px-1 py-1 overflow-hidden h-full bg-white w-full" >
+                <table class="px-1 py-1 overflow-hidden h-full bg-white w-full">
                     @foreach($piles as $pile)
                         <tr>
-                            <td class="float-left px-1 py-1 pilename" >{{$pile->name}} <p hidden>{{$pile->id}}</p></td>
+                            <td class="float-left px-1 py-1 pilename">{{$pile->name}} <p hidden>{{$pile->id}}</p></td>
                             <td class="float-right px-1 py-1">
                                 <select class="form-select mt-2 block w-full ownerselect" name="ownerselect">
                                     <option value="public">public</option>

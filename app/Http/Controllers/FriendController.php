@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreFriend;
 use App\Models\Friend;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
@@ -25,27 +26,25 @@ class FriendController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\RedirectResponse
+     * @param StoreFriend $request
+     * @return RedirectResponse
      */
 
-    public function store(Request $request)
+    public function store(StoreFriend $request)
     {
         $request->validate([
             'name' => 'required|regex:/#/',
         ]);
 
-
-
         if (strpos($request->input('name'),' ')){
-            redirect()->back()->with('error', 'no such person');
+            return redirect()->back()->with('error', 'names may only contain letters, numbers, dashes and underscores');
         }
         $name = explode("#", $request->input('name'));
         if (!is_numeric($name[1])){
-            redirect()->back()->with('error', 'no such person');
+            return redirect()->back()->with('error', 'no such person');
         }
 
-        if (DB::table('users')->where('name', $name[0])->where('id',$name[1])->exists()) {
+        if (DB::table('users')->where('name', $name)->where('id',$name[1])->exists()) {
             if (DB::table('friends')->where('name',$request->input('name'))->where('UserId',Auth::id())->doesntExist()) {
                 DB::table('friends')->insert([
                     'UserId' => Auth::id(),
@@ -59,23 +58,13 @@ class FriendController extends Controller
         return redirect()->route('friends-and-bans')->with('error', 'no such person');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Friend $friend
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Friend $friend)
-    {
-        //
-    }
 
 
     /**
      * Update the specified resource in storage.
      *
-     * @param \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\RedirectResponse
+     * @param Request $request
+     * @return RedirectResponse
      */
     public function update(Request $request)
     {
@@ -90,13 +79,13 @@ class FriendController extends Controller
      * Remove the specified resource from storage.
      *
      * @param Request $request
-     * @return \Illuminate\Http\RedirectResponse
+     * @return RedirectResponse
      */
     public function destroy(Request $request)
     {
         $name = explode('#',$request->input('name'));
 
-        if (DB::table('users')->where('name', $name[0])->where('id',$name[1])->exists()) {
+        if (DB::table('users')->where('name', $name)->where('id',$name[1])->exists()) {
             DB::table('friends')->where('name',$request->input('name'))->where('UserId',Auth::id())->delete();
         }
         return redirect()->back()->with('succes', 'removed succesfully');
