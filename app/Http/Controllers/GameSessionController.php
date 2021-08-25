@@ -86,11 +86,6 @@ class GameSessionController extends Controller
         $friends = DB::table('friends')->where('userId',Auth::id())->get();
         $owners = DB::table('piles')->where('GameId',$id)->distinct('owner')->get('owner');
         $piles = DB::table('piles')->where('GameId', $id)->get();
-        $pileItems = DB::table('piles_items')
-            ->join('piles', 'piles_items.PileId', '=', 'piles.id')
-            ->join('items', 'piles_items.ItemId', '=', 'items.id')
-            ->where('GameId', $id)
-            ->get();
 
         return view('session.index',compact('friends','owners','game','piles'));
     }

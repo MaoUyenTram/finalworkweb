@@ -3,19 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8b5b65e2-9f9d-4972-9c55-e54a6b51a2e1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FriendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FriendController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GameSessionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GameSessionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_05_092340_create_piles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_05_092340_create_piles_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/ingame.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/ingame.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/uploads/6d3dec33-7720-4aa8-8087-8b67691987c8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/piles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/piles/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/piles/settings.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/piles/settings.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/session/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/session/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/gdpr.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/gdpr.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,24 +197,25 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Documenten\finalworkweb\public" />
       <recent name="D:\Documenten\finalworkweb\vendor\laravel\framework\src\Illuminate" />
       <recent name="D:\Documenten\finalworkweb\vendor\laravel\framework\src\Illuminate\Broadcasting" />
       <recent name="D:\Documenten\finalworkweb\public\js" />
       <recent name="D:\Documenten\finalworkweb\app\Http\Controllers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Documenten\finalworkweb\public\videos" />
       <recent name="D:\Documenten\finalworkweb\" />
       <recent name="D:\Documenten\finalworkweb\app\Http\Controllers" />
       <recent name="D:\Documenten\finalworkweb" />
       <recent name="D:\Documenten\finalworkweb\app" />
-      <recent name="D:\Documenten\finalworkweb\public\uploads" />
     </key>
   </component>
   <component name="RunManager">
@@ -335,7 +328,9 @@
       <workItem from="1627840095078" duration="4391000" />
       <workItem from="1627900986348" duration="8332000" />
       <workItem from="1627985374721" duration="3466000" />
-      <workItem from="1628009102132" duration="5886000" />
+      <workItem from="1628009102132" duration="6353000" />
+      <workItem from="1628984150518" duration="931000" />
+      <workItem from="1629882989219" duration="7473000" />
     </task>
     <servers />
   </component>
